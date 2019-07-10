@@ -1,0 +1,20 @@
+span{
+    font-size: 40px;
+    
+}
+
+.section2{
+    background-image: url("bg.jpg");
+    background-size:cover;
+}
+
+.p1{
+    line-height: 5px;
+    font-size: 20px;
+    
+}
+.p11{
+    line-height: 5px;
+    margin-top:40px;
+    font-size: 20px;
+}
