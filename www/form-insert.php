@@ -32,7 +32,6 @@
 
         <input type="text" id="Postal" name="postal" placeholder="Insert Postal code"><br><br>
 
-
         <label for ="Startingpoint" value="start" >Starting point :</label>
 
         <input type="text" id="Start" name="point" placeholder="Insert Starting point"><br><br>
