@@ -19,17 +19,10 @@
 
         <input type="text" id="name" name="name" placeholder="Name"><br><br>
 
-        <label for ="image" value="picture" >Upload Picture :</label>
+        <label for ="image" value="picture" >Upload Map :</label>
 
         <input type="file" id="img" name="img"><br><br>
 
-        <label for="female" value="female"> Select Gender :</label>
-
-        <input type="radio" name="gender" value="female">Female
-
-        <input type="radio" name="gender" value="male">Male
-
-        <input type="radio" name="gender" value="other">Other <br><br>
 
         <label for ="City" value="city" >City :</label>
 
@@ -38,6 +31,16 @@
         <label for ="Postalcode" value="code" >Postal code :</label>
 
         <input type="text" id="Postal" name="postal" placeholder="Insert Postal code"><br><br>
+
+
+        <label for ="Startingpoint" value="start" >Starting point :</label>
+
+        <input type="text" id="Start" name="point" placeholder="Insert Starting point"><br><br>
+
+        <label for ="Endingpoint" value="end" >Ending point :</label>
+
+        <input type="text" id="End" name="point" placeholder="Insert Ending point"><br><br>
+
 
         <label for ="route" value="route" >Route :</label>
 
@@ -54,8 +57,9 @@
     
         <label for ="Discription" value="discription">Description : </label> <br>
         
-        <textarea name="Discription" rows="5" cols="40" ></textarea>
+        <textarea name="Discription" rows="5" cols="40" ></textarea><br>
 
+        <input type="submit" value="Submit">
 
 
         </form>
