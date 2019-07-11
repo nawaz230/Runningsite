@@ -1,13 +1,17 @@
 <?php
+//Import des fichiers nécéssaires aux tests
 require_once ("database.php");
 
+//J'instancie une nouvelle connexion à ma base de données
 $database = new Database();
 
 
-if($database->getConnection() == null){
-    echo "the connection is failed";
+if($database->getConnexion() == null){
+    echo "The connection failed";
 }else{
-    echo"hell yeah it is connected";
+    echo "Hell yeah it is connected!";
 }
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 ?>
