@@ -40,11 +40,6 @@
 
         <input type="text" id="End" name="point" placeholder="Insert Ending point"><br><br>
 
-
-        <label for ="route" value="route" >Route :</label>
-
-        <input type="text" id="route" name="route" placeholder="Route Name "><br><br>
-
         <label for ="country" value="country" >Country :</label>
 
         <input type="text" id="country" name="country" placeholder="Insert Country Name"><br><br>
