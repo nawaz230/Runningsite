@@ -9,7 +9,7 @@
 
     <body>
     <!--here is forme begin -->
-        <form action="index.html" method="post">
+        <form action="index.php" method="post">
 
         <label for ="title" value="title" >Title :</label>
 
