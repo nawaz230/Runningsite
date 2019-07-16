@@ -1,4 +1,11 @@
+<?php
+require_once ("database.php");
+require_once ("classtrail.php");
 
+$database = new Database();
+
+$trails = $database->getAllTrail();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,48 +40,24 @@
             <div class="container-fluid section2 pt-5">
 
                       <div class="row text-center">
-                          
-                          <div class="col-sm-4">
-                              
-                              <img src="photo/map1.jpg" height="200" width="200"  ><br>
-                            
-                            
-                             <p class="p11"><strong>Title :</strong> Runner</p>
-                             <p class="p1"><strong>Name :</strong> Geremey</p>
-                             <p class="p1"><strong>City :</strong> Munich</p>
-                             <p class="p1"><strong> Country :</strong> Germany</p>
-                             <button type="button" class="btn btn-secondary">View Details</button>
-                             
-                                    
+                          <?php foreach($trails as $trail){ ?>
+                            <div class="col-sm-4">
+                                
+                                <img src="<?php echo $trail->getPhoto(); ?>" height="200" width="200"  ><br>
+                                
+                                
+                                <p class="p11"><strong>Title :</strong> <?php echo $trail->getTitle(); ?></p>
+                                <p class="p1"><strong>Name :</strong> <?php echo $trail->getName();?></p>
+                                <p class="p1"><strong>City :</strong><?php echo $trail->getCity();?></p>
+                                <p class="p1"><strong> Country :</strong><?php echo $trail->getCountry();?> </p>
+                                <a href="detail.php?id=<?php echo $trail->getID();?> <button type="button" class="btn btn-secondary">View Details</button></a>
+                                
+                                        
 
-                          </div>
+                            </div>
+                          <?php } ?>
 
-                          <div class="col-sm-4">
-                              <img src="photo/map2.jpg" height="200" width="200"><br>
-                            
-                              <p class="p11"><strong>Title :</strong> Runner</p>
-                              <p class="p1"><strong>Name :</strong> Kumar</p>
-                              <p class="p1"><strong>City :</strong> Mumbai</p>
-                              <p class="p1"><strong> Country :</strong> India</p>
-                              <button type="button" class="btn btn-secondary">View Details</button>
-                              
-
-
-                          </div>
-
-                          <div class="col-sm-4">
-                              <img src="photo/map3.png"height="200" width="200"><br>
-                            
-                              <p class="p11"><strong>Title :</strong> Runner</p>
-                              <p class="p1"><strong>Name :</strong> Jakcy</p>
-                              <p class="p1"><strong>City :</strong> Binjing</p>
-                              <p class="p1"><strong> Country :</strong> China</p>
-                              <button type="button" class="btn btn-secondary"> View Details </button>
-                              
-
-                          </div>
-
-            </div>
+                       </div>
     </div>
 
 
@@ -82,37 +65,20 @@
     <div class="bg-home">
         <section class="container-fluid">
             <div class="row text-center row2">
+                <?php foreach ($trails as $trail){?>
                 <div class="col-sm-4">
-                            <img src="photo/mapcressy" height="200" width="200"><br>
+                            <img src="<?php echo $trail->getPhoto(); ?>" height="200" width="200"><br>
                         <br><br>
-                            <p class="p1"><strong>Title</strong>: My route</p>
-                            <p class="p1"><strong>Name</strong>:Maria Paula</p>
-                            <p class="p1"><strong>City</strong>: Switzerland</p>
-                            <p class="p1"><strong>Country</strong>: Cressy</p>
+                            <p class="p1"><strong>Title :</strong> <?php echo $trail->getTitle(); ?></p>
+                            <p class="p1"><strong>Name :</strong><?php echo $trail->getName(); ?></p>
+                            <p class="p1"><strong>City :</strong><?php echo $trail->getCity(); ?></p>
+                            <p class="p1"><strong>Country:</strong><?php echo $trail->getCountry();?></p>
                             <button type="button" class="btn btn-secondary">View Details</button>
 
-                </div>
+                </div> 
+                <?php } ?>
 
-                <div class="col-sm-4">
-                        <img src="photo/carte.png" height="200" width="200"><br>
-
-                        <p class="p11"><strong>Title</strong>: My route</p>
-                        <p class="p1"><strong>Name</strong>:Daniela Ruffiso</p>
-                        <p class="p1"><strong>City</strong>: Switzerland</p>
-                        <p class="p1"><strong>Country</strong>: Carouge</p>  
-                        <button type="button" class="btn btn-secondary">View Details</button>
-
-                </div>
-                <div class="col-sm-4">
-                        <img src="photo/carte2.png" height="200" width="200"><br>
-
-                        <p class="p11"><strong>Title</strong>: My route</p>
-                        <p class="p1"><strong>Name</strong>:Gerard Laurent</p>
-                        <p class="p1"><strong>City</strong>: Switzerland</p>
-                        <p class="p1"><strong>Country</strong>: Lancy</p>   
-                        <button type="button" class="btn btn-secondary">View Details</button>
-
-                </div>
+                
             </div>
         </section>
     </div>

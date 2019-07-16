@@ -16,25 +16,25 @@
     <h1>Add your activity!</h1>
 
     <!--here is forme begin -->
-    <form action="index.html" method="post">
+    <form action="processcreate.php" method="post">
 
         <label for ="nameActivity">Title :</label>
         <input type="text" id="nameActivity" name="title" placeholder="Insert title"><br><br>
 
         <label for ="nameAuthor">Name :</label>
-        <input type="text" id="nameAuthor" name="name" placeholder="Insert our name"><br><br>
+        <input type="text" id="nameAuthor" name="name" placeholder="Insert your name"><br><br>
 
         <label for ="imgActivity">Upload Map :</label>
-        <input type="file" id="imgActivity" name="img"><br><br>
-
-        <label for ="Startingpoint" value="start" >Starting point :</label>
-        <input type="text" id="Start" name="point" placeholder="Insert starting point"><br><br>
-
-        <label for ="Endingpoint" value="end" >Ending point :</label>
-        <input type="text" id="End" name="point" placeholder="Insert ending point"><br><br>
+        <input type="file" id="imgActivity" name="photo"><br><br>
 
         <label for ="Postalcode" value="code" >Postal code :</label>
-        <input type="text" id="Postal" name="postal" placeholder="Insert postal code"><br><br>
+        <input type="text" id="Postal" name="postalcode" placeholder="Insert postal code"><br><br>
+
+        <label for ="Startingpoint" value="start" >Starting point :</label>
+        <input type="text" id="Start" name="startingpoint" placeholder="Insert starting point"><br><br>
+
+        <label for ="Endingpoint" value="end" >Ending point :</label>
+        <input type="text" id="End" name="endingpoint" placeholder="Insert ending point"><br><br>
 
         <label for ="city">City :</label>
         <input type="text" id="city" name="city" placeholder="Insert city"><br><br>
