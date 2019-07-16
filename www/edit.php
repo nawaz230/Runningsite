@@ -41,7 +41,7 @@ $trail = $database->getTrailId($id);
 		<!--Beginning of the form===============================================================================================-->
     <form action="processupdate.php?id=<?php echo $id ?>" method="post" class="contact100-form validate-form abc">
       <span class="contact100-form-title">
-          Add your activity!
+          Edit your activity!
       </span>
       <!--Title--===============================================================================================-->
       <div class="wrap-input100 validate-input" data-validate="Title is required">

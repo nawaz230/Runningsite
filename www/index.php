@@ -21,7 +21,7 @@ $trails = $database->getAllTrail();
 
         <!--this is logonavigation bar-->
             
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar navbar-light bg-light ">
                     <a class="navbar-brand" href="#">
                         <img src="photo/logo.png" width="100" height="100">
 
@@ -39,7 +39,7 @@ $trails = $database->getAllTrail();
         <!--this is picture and infor-->
             <div class="container-fluid section2">
 
-                      <div class="row text-center pb-5">
+                      <div class="row text-center pb-5 pt-5">
                           <?php foreach($trails as $trail){ ?>
                             <div class="col-sm-4 pb-5">
                                 
