@@ -63,7 +63,7 @@ $trail = $database->getTrailId($id);
 			</div>
       <!--Starting point--===============================================================================================-->
       <div class="wrap-input100 validate-input" data-validate="An image is required">
-				<span class="label-input100">Upload your image</span>
+				<span class="label-input100">Starting point</span>
         <input class="input100" type="text" id="Start" name="startingpoint" value="<?php echo $trail->getStartingPoint();?>"><br><br>
         <span class="focus-input100"></span>
 			</div>
