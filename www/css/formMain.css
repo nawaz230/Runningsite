@@ -158,10 +158,10 @@ iframe {
   align-items: center;
   padding: 15px;
   background: #a797b4;
-  background: -webkit-linear-gradient(45deg, #6d4fd6, #b10b0b);
-  background: -o-linear-gradient(45deg, #6d4fd6, #b10b0b);
-  background: -moz-linear-gradient(45deg, #6d4fd6, #b10b0b);
-  background: linear-gradient(45deg, #6d4fd6, #b10b0b);
+  background: -webkit-linear-gradient(45deg, #000000, #928f8f);
+  background: -o-linear-gradient(45deg, #000000, #928f8f);
+  background: -moz-linear-gradient(45deg, #000000, #928f8f);
+  background: linear-gradient(45deg, #000000, #928f8f);
   
 }
 
@@ -302,10 +302,10 @@ textarea.input100 {
   width: 300%;
   height: 100%;
   background: #a64bf4;
-  background: -webkit-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: -o-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: -moz-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -webkit-linear-gradient(left, #000000, #928f8f);
+  background: -o-linear-gradient(left, #000000, #928f8f);
+  background: -moz-linear-gradient(left, #000000, #928f8f);
+  background: linear-gradient(left, #000000, #928f8f);
   top: 0;
   left: -100%;
 

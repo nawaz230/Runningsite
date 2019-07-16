@@ -35,10 +35,11 @@
 
 <body>
 
+
 <div class="container-contact100">
 		<div class="wrap-contact100">
 <!--Beginning of the form===============================================================================================-->
-			<form action="process-create.php" method ="post" class="contact100-form validate-form abc">
+			<form action="processcreate.php" method ="post" class="contact100-form validate-form abc">
 				<span class="contact100-form-title">
 					Add your activity!
 				</span>
@@ -366,6 +367,7 @@
 
 
 	<div id="dropDownSelect1"></div>
+
 
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>

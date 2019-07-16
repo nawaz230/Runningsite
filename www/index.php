@@ -37,11 +37,11 @@ $trails = $database->getAllTrail();
                       </form>
             </nav>
         <!--this is picture and infor-->
-            <div class="container-fluid section2 pt-5">
+            <div class="container-fluid section2">
 
-                      <div class="row text-center">
+                      <div class="row text-center pb-5">
                           <?php foreach($trails as $trail){ ?>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 pb-5">
                                 
                                 <img src="<?php echo $trail->getPhoto(); ?>" height="200" width="200"  ><br>
                                 
@@ -61,28 +61,7 @@ $trails = $database->getAllTrail();
     </div>
 
 
-    <!--Ted-->
-    <div class="bg-home">
-        <section class="container-fluid">
-            <div class="row text-center row2">
-                <?php foreach ($trails as $trail){?>
-                <div class="col-sm-4">
-                            <img src="<?php echo $trail->getPhoto(); ?>" height="200" width="200"><br>
-                        <br><br>
-                            <p class="p1"><strong>Title :</strong> <?php echo $trail->getTitle(); ?></p>
-                            <p class="p1"><strong>Name :</strong><?php echo $trail->getName(); ?></p>
-                            <p class="p1"><strong>City :</strong><?php echo $trail->getCity(); ?></p>
-                            <p class="p1"><strong>Country:</strong><?php echo $trail->getCountry();?></p>
-                            <button type="button" class="btn btn-secondary">View Details</button>
-
-                </div> 
-                <?php } ?>
-
-                
-            </div>
-        </section>
-    </div>
-    
+   
 
 <!--Footer-->
 <div class="bg-footer">
