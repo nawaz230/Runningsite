@@ -39,7 +39,7 @@ $trail = $database->getTrailId($id);
 	<div class="wrap-contact100">
 
 		<!--Beginning of the form===============================================================================================-->
-    <form action="processupdate.php?id=<?php echo $id ?>" method="post" class="contact100-form validate-form abc">
+    <form action="processupdate.php?id=<?php echo $id ?>" method="post" enctype="multipart/form-data" class="contact100-form validate-form abc">
       <span class="contact100-form-title">
           Edit your activity!
       </span>
@@ -58,7 +58,7 @@ $trail = $database->getTrailId($id);
 		  <!--Image--===============================================================================================-->
       <div class="wrap-input100 validate-input" data-validate="An image is required">
 			  <span class="label-input100">Upload your image</span>
-        <input class="input100" type="file" id="imgActivity" name="photo"><br><br>
+        <input class="input100" type="file" id="imgActivity" name="file" value="<?php echo $trail->getPhoto();?>"><br><br>
         <span class="focus-input100"></span>
 			</div>
       <!--Starting point--===============================================================================================-->
@@ -102,7 +102,7 @@ $trail = $database->getTrailId($id);
       <div class="container-contact100-form-btn">
 							<div class="wrap-contact100-form-btn">
 								<div class="contact100-form-bgbtn"></div>
-								<button class="contact100-form-btn">
+								<button name="submit" class="contact100-form-btn">
 									<span>
 										Submit
 										<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>

@@ -21,7 +21,7 @@ $trails = $database->getAllTrail();
 
         <!--this is logonavigation bar-->
             
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar navbar-dark bg-dark ">
                     <a class="navbar-brand" href="#">
                         <img src="photo/logo.png" width="100" height="100">
 

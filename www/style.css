@@ -7,6 +7,8 @@ span{
     background-image: url("photo/bg.jpg");
     background-size:cover;
     padding-bottom: 1%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .p1{
@@ -63,6 +65,7 @@ a{
 
 .section3{
     margin-bottom:200px;
+    
 }
 hr.style1{
     border-top: 1px solid #8c8b8b;

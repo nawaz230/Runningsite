@@ -39,7 +39,7 @@
 <div class="container-contact100">
 	<div class="wrap-contact100">
 	<!--Beginning of the form===============================================================================================-->
-				<form action="processcreate.php" method ="post" class="contact100-form validate-form abc">
+				<form action="processcreate.php" method ="post" enctype="multipart/form-data" class="contact100-form validate-form abc">
 					<span class="contact100-form-title">
 						Add your activity!
 					</span>
@@ -58,7 +58,7 @@
 	<!--Image--===============================================================================================-->
 					<div class="wrap-input100 validate-input" data-validate="An image is required">
 						<span class="label-input100">Upload your image</span>
-						<input class="input100" type="file" name="photo" required><br><br>
+						<input class="input100" type="file" name="file" required><br><br>
 						<span class="focus-input100"></span>
 					</div>
 	<!--Starting point--===============================================================================================-->
@@ -349,8 +349,9 @@
 	<!--Button===============================================================================================-->
 					<div class="container-contact100-form-btn">
 						<div class="wrap-contact100-form-btn">
-							<div class="contact100-form-bgbtn"></div>
-							<button class="contact100-form-btn">
+                            <div class="contact100-form-bgbtn"></div>
+                            
+							<button type="submit" name="submit" class="contact100-form-btn">
 								<span>
 									Submit
 									<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
