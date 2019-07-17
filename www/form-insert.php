@@ -58,25 +58,25 @@
 	<!--Image--===============================================================================================-->
 					<div class="wrap-input100 validate-input" data-validate="An image is required">
 						<span class="label-input100">Upload your image</span>
-						<input class="input100" type="file" name="image" required><br><br>
+						<input class="input100" type="file" name="photo" required><br><br>
 						<span class="focus-input100"></span>
 					</div>
 	<!--Starting point--===============================================================================================-->
 					<div class="wrap-input100 validate-input" data-validate="Starting point is required">
 							<span class="label-input100">Starting point</span>
-							<input class="input100" type="text" name="start" placeholder="Where did you start?" required>
+							<input class="input100" type="text" name="startingpoint" placeholder="Where did you start?" required>
 							<span class="focus-input100"></span>
 					</div>
 	<!--Ending point--===============================================================================================-->
 					<div class="wrap-input100 validate-input" data-validate="Ending point is required">
 							<span class="label-input100">Ending point</span>
-							<input class="input100" type="text" name="end" placeholder="Where did you finish?" required>
+							<input class="input100" type="text" name="endingpoint" placeholder="Where did you finish?" required>
 							<span class="focus-input100"></span>
 					</div>
 	<!--Postal code--===============================================================================================-->
 					<div class="wrap-input100 validate-input" data-validate="Postal code is required">
 							<span class="label-input100">Postal code</span>
-							<input class="input100" type="text" name="code" placeholder="Enter your postal code" required>
+							<input class="input100" type="text" name="postalcode" placeholder="Enter your postal code" required>
 							<span class="focus-input100"></span>
 					</div>
 	<!--City--===============================================================================================-->

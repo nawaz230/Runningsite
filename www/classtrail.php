@@ -29,7 +29,7 @@ class Trail {
     public function getStartingPoint(){
         return $this->startingpoint;
     }
-    public function getEndingpoint(){
+    public function getEndingPoint(){
         return $this->endingpoint;
     }
     public function getPostalCode(){

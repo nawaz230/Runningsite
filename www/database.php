@@ -90,7 +90,24 @@ public function getAllTrail(){
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------*/
- /// update function
+ 
+
+////fucntion to get the list of tail 
+
+public function getSomeTrail(){
+    // i prepare  my requect to sql
+    $pdoStatement = $this->connexion->prepare("SELECT * FROM walkers");
+
+    $pdoStatement->execute();
+
+     return $pdoStatement->fetchAll(PDO::FETCH_CLASS,"Trail");
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/// update function
 public function updatetrail($id, $title, $name, $photo, $postalcode, $startingpoint, $endingpoint, $city, $country, $description){
     $pdoStatement = $this->connexion->prepare("UPDATE walkers
      SET  title = :Title, name = :Name, photo = :Photo, postalcode = :PostalCode, startingpoint = :StartingPoint, endingpoint = :EndingPoint, city = :City, country = :Country, description = :DescriptionWalk 

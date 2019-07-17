@@ -21,7 +21,7 @@ $trails = $database->getAllTrail();
 
         <!--this is logonavigation bar-->
             
-            <nav class="navbar navbar-light bg-light ">
+            <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="#">
                         <img src="photo/logo.png" width="100" height="100">
 
@@ -31,17 +31,17 @@ $trails = $database->getAllTrail();
                     <a href="form-insert.php"><button type="button" class="btn btn-outline-primary">Add an activity</button></a>
 
         <!--this is search bar-->
-                      <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <form class="form-inline my-2 my-lg-0" action="index.php" method="GET" role="search">
+                        <input class="input-sm form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                       </form>
             </nav>
         <!--this is picture and infor-->
             <div class="container-fluid section2">
 
-                      <div class="row text-center pb-5 pt-5">
+                      <div class="row text-center pb-5">
                           <?php foreach($trails as $trail){ ?>
-                            <div class="col-sm-4 pb-5">
+                            <div class="col-sm-4 pt-5">
                                 
                                 <img src="<?php echo $trail->getPhoto(); ?>" height="200" width="200"  ><br>
                                 

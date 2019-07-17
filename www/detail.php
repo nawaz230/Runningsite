@@ -50,9 +50,9 @@ $trail = $database->getTrailId($id);
                                     <h1> Your Information </h1> 
                             <h3>Title :<?php echo $trail->getTitle();?> </h3>  
                             <h3>Name: <?php echo $trail->getName();?></h3>
-                            <h3>StartingPoint : <?php echo $trail->getStartingPoint();?></h3>
-                            <h3>EndlingPoint : <?php echo $trail->getEndingPoint();?></h3>
-                            <h3>PostalCode : <?php echo $trail->getPostalCode();?></h3>
+                            <h3>Starting Point : <?php echo $trail->getStartingPoint();?></h3>
+                            <h3>Ending Point : <?php echo $trail->getEndingPoint();?></h3>
+                            <h3>Postal Code : <?php echo $trail->getPostalCode();?></h3>
                             <h3>City : <?php echo $trail->getCity();?></h3>
                             <h3>Country : <?php echo $trail->getCountry();?></h3>
                             <h3>Description : <?php echo $trail->getDescription();?></h3>

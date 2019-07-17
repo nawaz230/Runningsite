@@ -64,3 +64,7 @@ a{
 .section3{
     margin-bottom:200px;
 }
+hr.style1{
+    border-top: 1px solid #8c8b8b;
+    margin: 5rem 0;
+}
