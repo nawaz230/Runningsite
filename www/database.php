@@ -33,7 +33,7 @@ class Database{
 /*----------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------*/
     // fonctions insertrunner
-    public function insertrunner($title, $name, $photo, $postalcode, $startingpoint, $endingpoint, $city, $country, $description){
+    public function insertrunner($title, $name, $fileDestination, $postalcode, $startingpoint, $endingpoint, $city, $country, $description){
         $pdoStatement = $this->connexion->prepare(
             "INSERT INTO walkers(title, name, photo, postalcode, startingpoint, endingpoint, city, country, description)
             VALUE( :Title, :NameWalk, :Photo, :PostalCode, :StartingPoint, :EndingPoint, :City, :Country, :DescriptionWalk)"
@@ -42,7 +42,7 @@ class Database{
         $pdoStatement->execute(array(
             "Title"=> $title,
             "NameWalk"=> $name,
-            "Photo"=> $photo,
+            "Photo"=> $fileDestination,
             "PostalCode"=> $postalcode,
             "StartingPoint"=> $startingpoint,
             "EndingPoint"=> $endingpoint,
@@ -91,7 +91,7 @@ public function getAllTrail(){
 /*----------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------*/
  /// update function
-public function updatetrail($id, $title, $name, $photo, $postalcode, $startingpoint, $endingpoint, $city, $country, $description){
+public function updatetrail($id, $title, $name, $fileDestination, $postalcode, $startingpoint, $endingpoint, $city, $country, $description){
     $pdoStatement = $this->connexion->prepare("UPDATE walkers
      SET  title = :Title, name = :Name, photo = :Photo, postalcode = :PostalCode, startingpoint = :StartingPoint, endingpoint = :EndingPoint, city = :City, country = :Country, description = :DescriptionWalk 
      WHERE id = :Id");
@@ -100,7 +100,7 @@ public function updatetrail($id, $title, $name, $photo, $postalcode, $startingpo
          "Id"=> $id,
         "Title" => $title,
         "Name" => $name,
-        "Photo" => $photo,
+        "Photo" => $fileDestination,
         "PostalCode" => $postalcode,
         "StartingPoint" => $startingpoint,
         "EndingPoint" => $endingpoint,
