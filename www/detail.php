@@ -23,7 +23,7 @@ $trail = $database->getTrailId($id);
         <div class="container-fluid">
              <!--this is logonavigation bar-->
             
-             <nav class="navbar navbar-light bg-light">
+             <nav class="navbar navbar-dark bg-dark">
                     <a class="navbar-brand" href="index.php">
                     <img src="photo/logo.png" width="100" height="100">
 
@@ -44,7 +44,7 @@ $trail = $database->getTrailId($id);
             </nav>
             <!--End search bar-->
                             
-                    <div class="row ">
+                    <div class="row pt-4">
                         <div class="col-sm-6 mb-5">
 
                                     <h1> Your Information </h1> 
@@ -58,7 +58,7 @@ $trail = $database->getTrailId($id);
                             <h3>Description : <?php echo $trail->getDescription();?></h3>
                         </div>
                         
-                        <div class="col-sm-6 section3"> <img src="<?php echo $trail->getPhoto();?>"></div>
+                        <div class="col-sm-6 section3"> <img class="img-fluid" src="<?php echo $trail->getPhoto();?>"></div>
                     </div> 
 
 

@@ -1,9 +1,11 @@
 /data/mysql/*
 /logs/mysql/*
 /logs/apache2/*
+/www/upload/*
 !/data/mysql/.gitkeep
 !/logs/mysql/.gitkeep
 !/logs/apache2/.gitkeep
+!/www/upload/.gitkeep
 _MACOSX
 /_MACOSX/*
 

@@ -36,6 +36,43 @@ $trails = $database->getAllTrail();
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                       </form>
             </nav>
+
+            <!--Début du carousel-->
+    <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active mb-5 col-lg-11 offset-1">
+                    <img class="d-block" src="upload/captown.jpg"  height="600" width="1519" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    <img src="photo/logo.png" width="300" height="300">
+                    <span> <b>Running Site </b></span>
+                </div>
+            </div>
+
+                <?php foreach($trails as $trail){?>  
+                    <div class="carousel-item mb-5 col-lg-11 offset-1">
+                        <img class="d-block" src="<?php echo $trail->getPhoto(); ?>"   height="600" width="1519" alt="Second slide">
+                    </div>
+                <?php } ?>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+<!--Fin du carousel-->
         <!--this is picture and infor-->
             <div class="container-fluid section2">
 
@@ -43,7 +80,7 @@ $trails = $database->getAllTrail();
                           <?php foreach($trails as $trail){ ?>
                             <div class="col-sm-4 pt-5">
                                 
-                                <img src="<?php echo $trail->getPhoto(); ?>" height="200" width="200"  ><br>
+                                <img class="rounded-circle" src="<?php echo $trail->getPhoto(); ?>" height="200" width="200"  ><br>
                                 
                                 
                                 <p class="p11"><strong>Title :</strong> <?php echo $trail->getTitle(); ?></p>
